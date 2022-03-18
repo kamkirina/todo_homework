@@ -1,0 +1,16 @@
+
+c-todo-item {
+    border: solid var(--lwc-borderWidthThin, 1px) #ecebea;
+    border-radius: var(--lwc-borderRadiusMedium, 4px);
+    margin: var(--lwc-borderWidthThin, 1px) 0;
+    padding: 3px var(--lwc-varSpacingXxxSmall, 2px) 0
+        var(--lwc-varSpacingXxxSmall, 2px);
+}
+
+c-todo-item:before {
+    position: absolute;
+    top: -9px;
+    left: var(--lwc-varSpacingXxSmall, 4px);
+    background-color: green;
+    padding: 0 var(--lwc-varSpacingXxSmall, 4px);
+}

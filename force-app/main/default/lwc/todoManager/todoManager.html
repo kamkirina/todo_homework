@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="ToDo List" icon-name="custom:custom100">
+      <div >
+        
+       
+          <lightning-layout-item>
+            <c-search-bar></c-search-bar>
+          </lightning-layout-item>
+        
+     
+      </div>
+      <div class="slds-var-m-left_medium">
+        <lightning-button
+          label="Create ToDo"
+          onclick={handleShowModal}
+        ></lightning-button>
+        <c-modal-Pop-Up> </c-modal-Pop-Up>
+      </div>
+     <div>  
+      <lightning-layout-item>
+        
+          <c-todo-list></c-todo-list>
+       
+      </lightning-layout-item>
+    
+  </div>
+
+      </lightning-card>
+    
+  </template>

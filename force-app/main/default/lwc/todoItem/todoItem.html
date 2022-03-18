@@ -1,0 +1,23 @@
+<template>
+ 
+        <lightning-layout vertical-align="center">
+           
+             <lightning-layout-item padding="around-medium">
+                <p>Title: {todo.Name}</p>
+                <p>Description: {todo.Description__c}</p>
+                <p>Category: {todo.Category__c}</p>
+                <p>Priority: {todo.Priority__c}</p>
+                <p>Status: {todo.Status__c}</p>
+            </lightning-layout-item>
+          <!--  <lightning-button label="Edit" 
+             onclick={EditRec}></lightning-button>-->
+           
+             <lightning-button label="Delete" 
+             onclick={deleteRec} value={todo.Id}></lightning-button>         
+             
+             <div class="slds-var-m-vertical_medium">
+                <template if:true={editTodo}>
+                    <c-edit-Pop-Up></c-edit-Pop-Up>>
+                </template></div>
+        </lightning-layout>
+    </template>
